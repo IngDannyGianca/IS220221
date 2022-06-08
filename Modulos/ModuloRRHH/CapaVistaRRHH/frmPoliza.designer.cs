@@ -48,6 +48,10 @@ namespace CapaVistaRRHH
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPoliza)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,6 +167,7 @@ namespace CapaVistaRRHH
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(63, 622);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -171,6 +176,7 @@ namespace CapaVistaRRHH
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(268, 619);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
@@ -179,6 +185,7 @@ namespace CapaVistaRRHH
             // 
             // textBox7
             // 
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(471, 619);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
@@ -212,11 +219,53 @@ namespace CapaVistaRRHH
             this.label7.TabIndex = 18;
             this.label7.Text = "Diferencia";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 81);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 49);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "Reporte";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(93, 82);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 48);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "Ayuda";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Planilla"});
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(171, 53);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(199, 21);
+            this.comboBox1.TabIndex = 21;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(13, 58);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Tipo de poliza";
+            // 
             // frmPoliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 654);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -265,5 +314,9 @@ namespace CapaVistaRRHH
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
     }
 }

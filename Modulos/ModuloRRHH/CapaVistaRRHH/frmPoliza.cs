@@ -196,6 +196,11 @@ namespace CapaVistaRRHH
             cn.ActualizarCodigosCuentas(valor1, valor2, valor3, valor4);
             MessageBox.Show("Codigos de cuentas modificados");
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

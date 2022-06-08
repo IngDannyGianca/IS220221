@@ -30,12 +30,8 @@ namespace CapaVistaRRHH
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCuentasContables));
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtAñosExperiencia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtIDPuesto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbnEstatusamodulo = new System.Windows.Forms.RadioButton();
@@ -43,61 +39,33 @@ namespace CapaVistaRRHH
             this.lblEstatus = new System.Windows.Forms.Label();
             this.dgvVistaPrevia = new System.Windows.Forms.DataGridView();
             this.navegador1 = new DLL.nav.navegador();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(375, 203);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(39, 20);
-            this.txtEstado.TabIndex = 93;
-            this.txtEstado.Tag = "estado";
-            this.txtEstado.Visible = false;
-            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
-            // 
-            // txtAñosExperiencia
-            // 
-            this.txtAñosExperiencia.Location = new System.Drawing.Point(169, 177);
-            this.txtAñosExperiencia.Name = "txtAñosExperiencia";
-            this.txtAñosExperiencia.Size = new System.Drawing.Size(200, 20);
-            this.txtAñosExperiencia.TabIndex = 3;
-            this.txtAñosExperiencia.Tag = "codigo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(59, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 96;
-            this.label3.Text = "Codigo";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(169, 151);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(200, 20);
-            this.txtNombre.TabIndex = 2;
-            this.txtNombre.Tag = "nombre";
+            this.label3.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(59, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 97;
-            this.label2.Text = "Nombre:";
-            // 
-            // txtIDPuesto
-            // 
-            this.txtIDPuesto.Location = new System.Drawing.Point(169, 125);
-            this.txtIDPuesto.Name = "txtIDPuesto";
-            this.txtIDPuesto.Size = new System.Drawing.Size(200, 20);
-            this.txtIDPuesto.TabIndex = 1;
-            this.txtIDPuesto.Tag = "pkId";
+            this.label2.Text = "Nomenclatura:";
             // 
             // label1
             // 
@@ -112,7 +80,7 @@ namespace CapaVistaRRHH
             // 
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
-            this.panel1.Location = new System.Drawing.Point(169, 203);
+            this.panel1.Location = new System.Drawing.Point(169, 232);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 30);
             this.panel1.TabIndex = 94;
@@ -146,9 +114,9 @@ namespace CapaVistaRRHH
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.Location = new System.Drawing.Point(59, 206);
             this.lblEstatus.Name = "lblEstatus";
-            this.lblEstatus.Size = new System.Drawing.Size(43, 13);
+            this.lblEstatus.Size = new System.Drawing.Size(41, 13);
             this.lblEstatus.TabIndex = 92;
-            this.lblEstatus.Text = "Estado:";
+            this.lblEstatus.Text = "Efecto:";
             // 
             // dgvVistaPrevia
             // 
@@ -168,17 +136,68 @@ namespace CapaVistaRRHH
             this.navegador1.Size = new System.Drawing.Size(1189, 87);
             this.navegador1.TabIndex = 90;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(59, 239);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 100;
+            this.label4.Text = "Estado:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(169, 125);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.TabIndex = 101;
+            this.textBox1.Tag = "pkId";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(169, 152);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 102;
+            this.textBox2.Tag = "nomenclatura";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(169, 179);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 20);
+            this.textBox3.TabIndex = 103;
+            this.textBox3.Tag = "nombre";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(169, 206);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 20);
+            this.textBox4.TabIndex = 104;
+            this.textBox4.Tag = "efecto";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(376, 241);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(42, 20);
+            this.txtEstado.TabIndex = 105;
+            this.txtEstado.Tag = "estado";
+            // 
             // frmCuentasContables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 378);
             this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtAñosExperiencia);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtIDPuesto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblEstatus);
@@ -198,13 +217,8 @@ namespace CapaVistaRRHH
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtAñosExperiencia;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIDPuesto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rbnEstatusamodulo;
@@ -212,5 +226,11 @@ namespace CapaVistaRRHH
         private System.Windows.Forms.Label lblEstatus;
         private System.Windows.Forms.DataGridView dgvVistaPrevia;
         private DLL.nav.navegador navegador1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEstado;
     }
 }
